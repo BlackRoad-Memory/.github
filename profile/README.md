@@ -1,20 +1,18 @@
-# BlackRoad Memory
+# BlackRoad-Memory
 
-*Your agents never forget the ride.*
+> *Agents that remember everything.*
 
-Persistent memory systems, agent memory bridges, and knowledge graph infrastructure. The reason every Roadie agent remembers you — every session, every device.
+The memory infrastructure for BlackRoad OS — long-term memory, semantic search, context windows, and the codex that makes Roadies persistent across sessions.
 
-## What We Own
+## Memory Stack
+- **memory_ltm** — Long-term memory (D1 SQLite, vector-ready)
+- **memory_stm** — Short-term working memory per session
+- **memory_codex** — Solutions + patterns database
+- **context_bridge** — Cross-session context continuity
+- **memory_indexer** — FTS5 full-text search across all memories
 
-- Agent memory systems (D1-backed persistent state)
-- Memory bridge integrations (Claude, OpenAI, Ollama)
-- Session continuity and cross-device sync
-- Knowledge graph construction and traversal
-
-## Stack
-
-Cloudflare D1 · Cloudflare KV · Vector databases · RoadTrip memory API · Ollama
+## Live
+Every agent at **[roadtrip.blackroad.io](https://roadtrip.blackroad.io)** uses this stack.
 
 ---
-
-Part of [BlackRoad OS](https://blackroad.io) — Remember the Road. Pave Tomorrow.
+*Part of [BlackRoad OS, Inc.](https://os.blackroad.io) — Remember the Road. Pave Tomorrow.* 🖤🛣️
